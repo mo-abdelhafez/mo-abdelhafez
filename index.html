@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mo Abdelhafez - Home</title>
+    <title>Mohamed AbdelHafez - Engineering Manager</title>
     <style>
         * {
             margin: 0;
@@ -15,104 +15,218 @@
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             line-height: 1.6;
             color: #333;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            min-height: 100vh;
+            background: #f5f5f5;
         }
         
         .container {
-            max-width: 1200px;
+            max-width: 1000px;
             margin: 0 auto;
             padding: 20px;
         }
         
         header {
-            text-align: center;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
             color: white;
-            padding: 60px 20px;
+            padding: 40px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
         }
         
         header h1 {
-            font-size: 3.5rem;
-            margin-bottom: 10px;
-            font-weight: 700;
+            font-size: 2.5rem;
+            margin-bottom: 5px;
         }
         
-        header p {
+        header .title {
             font-size: 1.3rem;
             opacity: 0.9;
-            margin-bottom: 30px;
-        }
-        
-        .button-group {
-            display: flex;
-            justify-content: center;
-            gap: 15px;
-            flex-wrap: wrap;
-        }
-        
-        .btn {
-            display: inline-block;
-            padding: 12px 30px;
-            background: white;
-            color: #667eea;
-            text-decoration: none;
-            border-radius: 50px;
-            font-weight: 600;
-            transition: all 0.3s ease;
-            border: 2px solid white;
-        }
-        
-        .btn:hover {
-            background: transparent;
-            color: white;
-        }
-        
-        .btn-secondary {
-            background: transparent;
-            color: white;
-        }
-        
-        .btn-secondary:hover {
-            background: white;
-            color: #667eea;
-        }
-        
-        .content {
-            background: white;
-            border-radius: 10px;
-            padding: 40px;
-            margin-top: 40px;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
-        }
-        
-        .content h2 {
-            color: #667eea;
-            margin-bottom: 20px;
-            font-size: 2rem;
-        }
-        
-        .content p {
             margin-bottom: 15px;
+        }
+        
+        .contact-info {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            font-size: 0.95rem;
+        }
+        
+        .contact-info a {
+            color: white;
+            text-decoration: none;
+            transition: opacity 0.3s;
+        }
+        
+        .contact-info a:hover {
+            opacity: 0.8;
+        }
+        
+        section {
+            background: white;
+            padding: 30px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        
+        section h2 {
+            color: #667eea;
+            font-size: 1.8rem;
+            margin-bottom: 20px;
+            border-bottom: 2px solid #667eea;
+            padding-bottom: 10px;
+        }
+        
+        .summary {
+            font-size: 1.05rem;
             line-height: 1.8;
+            color: #555;
+        }
+        
+        .job {
+            margin-bottom: 25px;
+        }
+        
+        .job-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            margin-bottom: 8px;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        
+        .job-title {
+            font-size: 1.2rem;
+            font-weight: 600;
+            color: #333;
+        }
+        
+        .company {
+            font-weight: 600;
+            color: #667eea;
+        }
+        
+        .date {
+            color: #999;
+            font-size: 0.95rem;
+        }
+        
+        .job-description {
+            color: #555;
+            margin-top: 10px;
+        }
+        
+        .job-description ul {
+            margin-left: 20px;
+            margin-top: 8px;
+        }
+        
+        .job-description li {
+            margin-bottom: 8px;
+        }
+        
+        .education {
+            margin-bottom: 20px;
+        }
+        
+        .education-degree {
+            font-weight: 600;
+            color: #333;
+            margin-bottom: 5px;
+        }
+        
+        .education-school {
+            color: #667eea;
+            margin-bottom: 3px;
+        }
+        
+        .education-dates {
+            color: #999;
+            font-size: 0.95rem;
+        }
+        
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+        
+        .skill-category {
+            background: #f9f9f9;
+            padding: 15px;
+            border-radius: 6px;
+            border-left: 4px solid #667eea;
+        }
+        
+        .skill-category h4 {
+            color: #667eea;
+            margin-bottom: 10px;
+            font-size: 1rem;
+        }
+        
+        .skill-category p {
+            color: #555;
+            line-height: 1.6;
+            font-size: 0.95rem;
+        }
+        
+        .projects {
+            margin-top: 20px;
+        }
+        
+        .project {
+            margin-bottom: 15px;
+            padding-bottom: 15px;
+            border-bottom: 1px solid #eee;
+        }
+        
+        .project:last-child {
+            border-bottom: none;
+        }
+        
+        .project-name {
+            font-weight: 600;
+            color: #667eea;
+            margin-bottom: 5px;
+        }
+        
+        .project-description {
+            color: #555;
+            font-size: 0.95rem;
         }
         
         footer {
             text-align: center;
-            color: white;
-            padding: 30px 20px;
-            margin-top: 40px;
+            padding: 20px;
+            color: #999;
         }
         
         @media (max-width: 768px) {
+            header {
+                padding: 25px;
+            }
+            
             header h1 {
-                font-size: 2rem;
+                font-size: 1.8rem;
             }
             
-            header p {
-                font-size: 1rem;
+            .contact-info {
+                flex-direction: column;
+                gap: 10px;
             }
             
-            .content {
+            .job-header {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            
+            .skills-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            section {
                 padding: 20px;
             }
         }
@@ -121,38 +235,195 @@
 <body>
     <div class="container">
         <header>
-            <h1>Mo Abdelhafez</h1>
-            <p>Welcome to my home page</p>
-            <div class="button-group">
-                <a href="#about" class="btn">About Me</a>
-                <a href="#projects" class="btn btn-secondary">Projects</a>
-                <a href="#contact" class="btn btn-secondary">Contact</a>
+            <h1>Mohamed AbdelHafez</h1>
+            <div class="title">Engineering Manager</div>
+            <div class="contact-info">
+                <span>📍 Berlin, Germany</span>
+                <span>📞 +49 152 06833083</span>
+                <span>📧 <a href="mailto:mhmdrmdn94@gmail.com">mhmdrmdn94@gmail.com</a></span>
+                <span>🔗 <a href="https://linkedin.com/in/mhmdrmdn/" target="_blank">LinkedIn</a></span>
             </div>
         </header>
         
-        <section class="content" id="about">
-            <h2>About Me</h2>
-            <p>
-                Hi! I'm Mo Abdelhafez, a passionate developer and technology enthusiast. 
-                I love building things and exploring new technologies.
-            </p>
-            <p>
-                This is my personal space on GitHub where I share my projects and contributions 
-                to the open-source community.
-            </p>
-        </section>
-        
-        <section class="content" id="projects">
-            <h2>Projects</h2>
-            <p>
-                Check out my GitHub repositories to see the projects I'm working on. 
-                I'm always working on something interesting!
+        <!-- Summary Section -->
+        <section>
+            <h2>Professional Summary</h2>
+            <p class="summary">
+                Engineering Manager with 8+ years of experience in mobile development and SDK development, currently 
+                leading a team of 8 engineers at Zalando. Experienced in scaling teams, driving cross-functional initiatives, and 
+                delivering large-scale eCommerce mobile features used by millions of customers. Passionate about building high-
+                performance teams, improving engineering processes, and aligning technical strategy with product outcomes.
             </p>
         </section>
         
-        <footer id="contact">
-            <p>&copy; 2026 Mo Abdelhafez. All rights reserved.</p>
-            <p>Connect with me on <a href="https://github.com/mo-abdelhafez" style="color: white; text-decoration: underline;">GitHub</a></p>
+        <!-- Work Experience Section -->
+        <section>
+            <h2>Work Experience</h2>
+            
+            <div class="job">
+                <div class="job-header">
+                    <span>
+                        <div class="job-title">Engineering Manager</div>
+                        <div class="company">Zalando SE</div>
+                    </span>
+                    <span class="date">Apr 2025 - Present</span>
+                </div>
+                <div class="job-description">
+                    <ul>
+                        <li>Lead two engineering teams (14 engineers total) delivering critical business operations and initiatives impacting millions of Zalando customers across mobile platforms</li>
+                        <li>Partner with stakeholders, product, design and leadership to define monthly and quarterly roadmaps</li>
+                        <li>Lead technical solutions, architecture reviews, ensuring scalable solutions and alignments across mobile platform teams</li>
+                        <li>Establish clear ways of working and provide technical guidance, evolving the team from siloed ownership to a collaborative and scalable delivery model</li>
+                        <li>Improve team effectiveness through regular feedback loops, process improvements, and structured collaboration practices</li>
+                        <li>Mentor direct reports through tailored development plans, supporting their growth while maintaining healthy workloads and strong productivity</li>
+                        <li>Hired and onboarded engineers and conducting regular performance reviews and career development planning</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="job">
+                <div class="job-header">
+                    <span>
+                        <div class="job-title">Senior Software Engineer</div>
+                        <div class="company">Zalando SE</div>
+                    </span>
+                    <span class="date">Jul 2022 - Apr 2025</span>
+                </div>
+                <div class="job-description">
+                    <ul>
+                        <li>Led various projects and contributed to all project phases, from solution design to post-launch</li>
+                        <li>Improved topic ownership processes within the organisation by creating documentation and guides for fresh topic owners</li>
+                        <li>Improved mobile test coverage and stability by scaling snapshot tests across teams</li>
+                        <li>Mentored a C5 Women-in-Tech graduate, fostering her technical and communication skills</li>
+                        <li>Interviewed junior and senior candidates for various roles at Zalando</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="job">
+                <div class="job-header">
+                    <span>
+                        <div class="job-title">Software Engineer</div>
+                        <div class="company">Zalando SE</div>
+                    </span>
+                    <span class="date">Feb 2020 - Jun 2022</span>
+                </div>
+                <div class="job-description">
+                    <ul>
+                        <li>Played a key role in the successful revamp of the PDP, implementing various new tiles and ensuring comprehensive test coverage</li>
+                        <li>Served as a topic owner for multiple initiatives, contributing to TDDs and ensuring timely project delivery</li>
+                        <li>Responsible for developing and executing load test scenarios for CBOs during high-traffic events like Cyberweek</li>
+                        <li>Mentored and onboarded new team members, creating detailed onboarding plans</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="job">
+                <div class="job-header">
+                    <span>
+                        <div class="job-title">iOS Software Engineer</div>
+                        <div class="company">Instabug</div>
+                    </span>
+                    <span class="date">Apr 2019 - Feb 2020</span>
+                </div>
+                <div class="job-description">
+                    <p>Instabug is one of the leading Bug Reporting and Crash Reporting SDKs used by 25,000+ companies.</p>
+                    <ul>
+                        <li>Developed and launched the Repro Steps feature, a crucial bug reporting tool for developers</li>
+                        <li>Optimised the Repro Steps feature by utilizing screenshots of user flows to reconstruct views</li>
+                        <li>Enhanced code quality by supporting initiatives to improve code coverage through unit tests</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="job">
+                <div class="job-header">
+                    <span>
+                        <div class="job-title">iOS Software Engineer</div>
+                        <div class="company">Eventtus</div>
+                    </span>
+                    <span class="date">Oct 2017 - Apr 2019</span>
+                </div>
+                <div class="job-description">
+                    <p>Eventtus is an Award-winning digital events management platform and leading events app in MENA, serving 10,000+ events.</p>
+                    <ul>
+                        <li>Revamped CBOs (Agenda and Messaging) to enhance user experience and improve code scalability</li>
+                        <li>Increased code coverage and robustness through comprehensive unit tests</li>
+                        <li>Presented integration of new app architectures (MVP and VIPER) as a community contribution</li>
+                        <li>Actively participated in the hiring process, conducting interviews with junior candidates</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Education Section -->
+        <section>
+            <h2>Education</h2>
+            
+            <div class="education">
+                <div class="education-degree">Mobile Developer Diploma</div>
+                <div class="education-school">Information Technology Institute, Egypt</div>
+                <div class="education-dates">Sep 2016 - Jun 2017</div>
+                <p style="margin-top: 8px; color: #555; font-size: 0.95rem;">9-month program focused on native Android and iOS, as well as cross-platform development with React Native</p>
+            </div>
+            
+            <div class="education">
+                <div class="education-degree">B.C.Sc in Computer Science</div>
+                <div class="education-school">Faculty of Computers and Information, Assiut University, Egypt</div>
+                <div class="education-dates">Sep 2012 - Jul 2016</div>
+                <p style="margin-top: 8px; color: #555; font-size: 0.95rem;">Score: Very Good</p>
+            </div>
+        </section>
+        
+        <!-- Skills Section -->
+        <section>
+            <h2>Skills & Expertise</h2>
+            
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h4>Engineering Leadership</h4>
+                    <p>Team Leadership (14 engineers), Hiring & Interviewing, Mentorship & Career Development, Technical Strategy and Reviews</p>
+                </div>
+                <div class="skill-category">
+                    <h4>Technical Skills</h4>
+                    <p><strong>Languages:</strong> Objective-C, Swift, Java, React<br>
+                    <strong>Architectures:</strong> MVC, MVP, MVVM, VIPER</p>
+                </div>
+                <div class="skill-category">
+                    <h4>API & Tools</h4>
+                    <p><strong>APIs:</strong> REST, GraphQL<br>
+                    <strong>Analytics:</strong> Crashlytics, Google Analytics, Lightstep, Grafana</p>
+                </div>
+                <div class="skill-category">
+                    <h4>Collaboration</h4>
+                    <p>Cross-functional Collaboration, Stakeholder Management, Roadmapping, Process Improvement</p>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Highlighted Projects Section -->
+        <section>
+            <h2>Highlighted Projects</h2>
+            
+            <div class="projects">
+                <div class="project">
+                    <div class="project-name">Instabug SDK</div>
+                    <div class="project-description">
+                        A platform for Real-Time Contextual Insights throughout the entire mobile app lifecycle. More than 25,000 companies rely on Instabug, including industry leaders like Lyft, Soundcloud, and eBay. Worked on maintaining critical business features like crash-reporting and enhancing their performance.
+                    </div>
+                </div>
+                
+                <div class="project">
+                    <div class="project-name">Eventtus</div>
+                    <div class="project-description">
+                        An engagement platform for events and the leading event app provider in MENA. Trusted by 10,000+ events and more than 1.5M users across 8+ countries. Worked on maintaining and developing the core Eventtus app, adding new features to many branded apps including Startup Grind Europe and MIT SciTech.
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <footer>
+            <p>&copy; 2026 Mohamed AbdelHafez. All rights reserved.</p>
         </footer>
     </div>
 </body>
