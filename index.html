@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mo Abdelhafez - Home</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        header {
+            text-align: center;
+            color: white;
+            padding: 60px 20px;
+        }
+        
+        header h1 {
+            font-size: 3.5rem;
+            margin-bottom: 10px;
+            font-weight: 700;
+        }
+        
+        header p {
+            font-size: 1.3rem;
+            opacity: 0.9;
+            margin-bottom: 30px;
+        }
+        
+        .button-group {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+        
+        .btn {
+            display: inline-block;
+            padding: 12px 30px;
+            background: white;
+            color: #667eea;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            border: 2px solid white;
+        }
+        
+        .btn:hover {
+            background: transparent;
+            color: white;
+        }
+        
+        .btn-secondary {
+            background: transparent;
+            color: white;
+        }
+        
+        .btn-secondary:hover {
+            background: white;
+            color: #667eea;
+        }
+        
+        .content {
+            background: white;
+            border-radius: 10px;
+            padding: 40px;
+            margin-top: 40px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+        }
+        
+        .content h2 {
+            color: #667eea;
+            margin-bottom: 20px;
+            font-size: 2rem;
+        }
+        
+        .content p {
+            margin-bottom: 15px;
+            line-height: 1.8;
+        }
+        
+        footer {
+            text-align: center;
+            color: white;
+            padding: 30px 20px;
+            margin-top: 40px;
+        }
+        
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2rem;
+            }
+            
+            header p {
+                font-size: 1rem;
+            }
+            
+            .content {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Mo Abdelhafez</h1>
+            <p>Welcome to my home page</p>
+            <div class="button-group">
+                <a href="#about" class="btn">About Me</a>
+                <a href="#projects" class="btn btn-secondary">Projects</a>
+                <a href="#contact" class="btn btn-secondary">Contact</a>
+            </div>
+        </header>
+        
+        <section class="content" id="about">
+            <h2>About Me</h2>
+            <p>
+                Hi! I'm Mo Abdelhafez, a passionate developer and technology enthusiast. 
+                I love building things and exploring new technologies.
+            </p>
+            <p>
+                This is my personal space on GitHub where I share my projects and contributions 
+                to the open-source community.
+            </p>
+        </section>
+        
+        <section class="content" id="projects">
+            <h2>Projects</h2>
+            <p>
+                Check out my GitHub repositories to see the projects I'm working on. 
+                I'm always working on something interesting!
+            </p>
+        </section>
+        
+        <footer id="contact">
+            <p>&copy; 2026 Mo Abdelhafez. All rights reserved.</p>
+            <p>Connect with me on <a href="https://github.com/mo-abdelhafez" style="color: white; text-decoration: underline;">GitHub</a></p>
+        </footer>
+    </div>
+</body>
+</html>
