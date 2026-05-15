@@ -31,6 +31,23 @@
             border-radius: 10px;
             margin-bottom: 30px;
             box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+            display: flex;
+            align-items: center;
+            gap: 30px;
+        }
+        
+        .header-content {
+            flex: 1;
+        }
+        
+        .profile-image {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 4px solid white;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+            flex-shrink: 0;
         }
         
         header h1 {
@@ -205,6 +222,8 @@
         
         @media (max-width: 768px) {
             header {
+                flex-direction: column;
+                text-align: center;
                 padding: 25px;
             }
             
@@ -212,9 +231,15 @@
                 font-size: 1.8rem;
             }
             
+            .profile-image {
+                width: 120px;
+                height: 120px;
+            }
+            
             .contact-info {
                 flex-direction: column;
                 gap: 10px;
+                justify-content: center;
             }
             
             .job-header {
@@ -235,12 +260,15 @@
 <body>
     <div class="container">
         <header>
-            <h1>Mohamed AbdelHafez</h1>
-            <div class="title">Engineering Manager</div>
-            <div class="contact-info">
-                <span>📍 Berlin, Germany</span>
-                <span>📧 <a href="mailto:mhmdrmdn94@gmail.com">mhmdrmdn94@gmail.com</a></span>
-                <span>🔗 <a href="https://linkedin.com/in/mhmdrmdn/" target="_blank">LinkedIn</a></span>
+            <img src="IMG_7110 2.JPG" alt="Mohamed AbdelHafez Profile" class="profile-image">
+            <div class="header-content">
+                <h1>Mohamed AbdelHafez</h1>
+                <div class="title">Engineering Manager</div>
+                <div class="contact-info">
+                    <span>📍 Berlin, Germany</span>
+                    <span>📧 <a href="mailto:mhmdrmdn94@gmail.com">mhmdrmdn94@gmail.com</a></span>
+                    <span>🔗 <a href="https://linkedin.com/in/mhmdrmdn/" target="_blank">LinkedIn</a></span>
+                </div>
             </div>
         </header>
         
